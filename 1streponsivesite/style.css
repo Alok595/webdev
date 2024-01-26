@@ -1,0 +1,290 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 10vh;
+    background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+   
+    
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.logo i{
+    font-size: 4vw;
+    color: aliceblue;
+}
+.logo h1{
+    
+    color: aliceblue;
+}
+#i2{
+    display: none;
+}
+.nav-detail{
+   display: flex;
+   align-items: center;
+   gap: 2vw;
+   font-size: 1.5vw;
+   font-weight: 500;
+   
+       
+}
+.nav-detail a{
+    color: rgb(238, 238, 238);
+    
+    
+}
+
+.nav-detail a:hover{
+    border-bottom: 2px solid black;
+    color: black;
+    
+
+
+}
+
+.nav-detail button{
+    padding: 1vh 3vh;
+    border:2px solid transparent;
+    font-weight: 600;
+    font-size: 1vw;
+    background-color: blueviolet;
+    border-radius: 2vh;
+
+}
+.nav-detail button a:hover{
+    border: none;
+    
+    
+    
+}
+
+#a2{
+    color: aliceblue;
+}
+
+@media (max-width:950px) {
+    .nav{
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .nav-detail a{
+        display: none;
+        
+    }
+    #a2{
+        display: block;
+        font-size: 2vh;
+    }
+    .nav-detail button{
+        color: aliceblue;
+    }
+    .logo i{
+        color: aliceblue;
+        font-size: 6vh;
+    }
+    #i2{
+        display: block;
+        color: beige;
+        font-size: 8vw;
+    }
+     .logo h1{
+        font-size: 3vh;
+        color: aliceblue;
+    }
+    
+}
+
+
+
+/* hero section */
+
+.hero{
+    height: 90vh;
+    width: 100vw;
+   
+    position: relative;
+    display: flex;
+    
+    
+}
+
+.left{
+    height: calc(100vh - 10vh);
+    width: 50%;
+    animation: slidefromleft 1s ease forwards;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+@keyframes slidefromleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: 0;
+    }
+    
+}
+
+.right{
+    height: calc(100vh - 10vh);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8vh;
+    
+    
+    
+}
+.logo2{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.logo2 img{
+    height: 100%;
+    width: 100%;
+    
+}
+.lbox{
+    height: 90%;
+    width: 90%;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: initial;
+    padding: 2vw 4vw;
+}
+.lbox h1{
+    width: 80%;
+    font-size: 4vw;
+    line-height: 8vh;
+}
+.lbox span{
+    color: rgb(130, 221, 221);
+    font-size: 5vw;
+    margin-left: 8vw;
+}
+.lbox p{
+    font-size: 1.6vw;
+    font-weight: 600;
+    
+    
+}
+.lbox button{
+    
+    
+    padding: 1vw 2vw;
+    
+    font-size: 1.6vw;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.4s linear 0s;
+    background-color: bisque;
+}
+.but{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.lbox button:hover{
+    transform: scale(1.1);
+
+}
+
+
+@media (max-width:950px) {
+    .hero{
+        display: flex;
+        flex-direction: column;    
+        position: relative;
+    }
+    .left{
+        height: 50%;
+        width: 100%;  
+        
+        
+    }
+    .right{
+        height: 95%;
+        width: 100%;  
+        padding: 0%;
+        
+    }
+    .lbox{
+        height: 90%;
+        width:90% ;
+    }
+    .lbox h1{
+        line-height: 5vh;
+        font-size: 4vh;
+        
+    }
+    .lbox span{
+        color: rgb(130, 221, 221);
+        font-size: 5vh;
+        margin-left: 8vw;
+    }
+    .lbox p{
+        font-size: 1.8vh;
+        font-weight: 600;
+        
+        
+    }
+    .lbox button{
+        
+        margin-top: 3vh;
+        padding: 1vh 2vh;
+        gap: 1px;
+        font-size: 1.6vh;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+    .but{
+        display: flex;
+        flex-direction: row;
+        
+        align-items: center;
+        gap: 10px;
+    }
+    .logo2 img{
+        height: 90%;
+        width: 100%;
+        padding: 1vh;
+        
+    }
+}
+
+     
